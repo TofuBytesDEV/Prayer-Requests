@@ -14,7 +14,6 @@ $(function(){
             alert("Please Fill Out All The Fields");
             return false;
         }
-		jQuery.noConflict();
 		$('#CompletedModal').modal('show');
 		$.post(link, {"content": content, "username": username,});
     });
